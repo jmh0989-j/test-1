@@ -24,7 +24,7 @@ public class ChooseYourPath{
         // take only the first character of the input
         opt1=opt1.substring(0,1);
         if (opt1.equals("y")) { 
-            print("You go exploring and come across a silver 1960 Smithen Western Shix Shot revolver. Do you take it? [Y/n]");
+            print("You go exploring and come across a silver 1960 Smithen Western Six Shot revolver. Do you take it? [Y/n]");
             opt1=scan.nextLine();
             opt1=opt1.substring(0,1);
             // check if input is "y" or "Y"
