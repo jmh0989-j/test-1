@@ -17,7 +17,7 @@ public class ChooseYourPath{
         // init scanner
         Scanner scan = new Scanner(System.in);
         // ask first question and assign to a variable
-        print("would you like to go exploring in the endless labrynth? [Y/n]");
+        print("Would you like to go exploring in the endless labrynth? [Y/n]");
         String opt1 = scan.nextLine();
 
         boolean gun;
@@ -49,25 +49,25 @@ public class ChooseYourPath{
                 }
             }
             else {
-                print("you find a monster with a half eaten man. Do you shoot it [Y/n]");
+                print("You find a monster with a half eaten man. Do you shoot it? [Y/n]");
                 opt1=scan.nextLine();
                 opt1=opt1.substring(0,1);
                     // yes and gun
                     if ((opt1.equals("y") || opt1.equals("Y")) && gun){
-                    print("you shot the monster killing it in cold blood and now you live in the backrooms");
+                    print("You shot the monster, killing it in cold blood. You now live in the backrooms.");
                     }
                     // yes without gun
                     else if(((opt1.equals("y") || opt1.equals("Y")) && !gun)) {
-                        print("you reach for a gun you do not have and the monster rushes at you and you die");
+                        print("You reach for a gun you do not have, and the monster rushes at you. You die.");
                     }
                     // no with gun
                     else if((opt1.equals("n") || opt1.equals("N"))&& gun){
-                        print("you are stricken with fear making you unable to reach for your gun"+
-                        " causing the monster to murder you");
+                        print("you are stricken with fear, making you unable to reach for your gun, " +
+                        "causing the monster to capture you.");
                     }
                     // no without gun
                     else if((opt1.equals("n") || opt1.equals("N") && !gun)){
-                        print("with no way to defend yourself you are stricken with fear and faint allowing the monster to kill you");
+                        print("With no way to defend yourself, you are stricken with fear and faint, allowing the monster to kill you.");
                     }
                 }
  } 
